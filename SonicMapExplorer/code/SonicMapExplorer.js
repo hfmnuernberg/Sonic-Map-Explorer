@@ -550,6 +550,7 @@ max.addHandler('loadModel', async (pathFromMax) => {
       // max.post('Original encoder model reconstructed with sampleLayer.');
       max.outlet('modelLoaded', 1);
 
+
       const umapDataPath = path.join(modelFolderPath, 'umapData.json');
       max.outlet('dirnameUmap', 'read', umapDataPath);
       const colorDataPath = path.join(modelFolderPath, 'colorData.json');
